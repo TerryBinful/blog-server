@@ -1,0 +1,17 @@
+{
+  "name": "blog-post-server",
+  "version": "1.0.0",
+  "description": "CSCD322- Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js"
+  },
+  "author": "Terrence Binful",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.4.0",
+    "graphql": "^15.7.1"
+  },
+  "devDependencies": {}
+}
