@@ -1,5 +1,5 @@
 const {gql} =  require ("apollo-server")
-const BlogData = require('./Blogs')
+
 
 
 const typeDefs = gql`
@@ -7,13 +7,16 @@ const typeDefs = gql`
   type Blog {
     # Blog fields
         id: ID!
+        date: String!
         title: String!
         author: Author!
+        # blog data goes here
+        text: String!
         # display picture for banner
         banner: String!
         likes: Int
         unlike: Int
-        comment: Comment
+        comment: [Comment]
         }
 
 # Authors description - table
@@ -30,6 +33,7 @@ const typeDefs = gql`
     type Comment {
     # Comment fields
         id: ID!
+        blogID: String!
         commentor: String!
         comments: String!
  }
